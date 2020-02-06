@@ -7,14 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  mostrar = false;
+
   person = {
     nombre: 'Stiven',
     apellido: 'Trujillo'
-  }
+  };
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  miFuncion = () => {
+    this.mostrar = !this.mostrar;
   }
 
 }
